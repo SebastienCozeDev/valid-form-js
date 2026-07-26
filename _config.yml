@@ -1,0 +1,4 @@
+title: "@validform/validform"
+description: "A small vanilla JS form validation library for the browser."
+theme: minima
+markdown: kramdown
