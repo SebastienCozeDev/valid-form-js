@@ -1,6 +1,6 @@
 {
-  "name": "validform",
-  "version": "1.0.0",
+  "name": "@validform/validform",
+  "version": "1.0.2",
   "description": "A small vanilla JS form validation library for the browser.",
   "main": "validform.min.js",
   "browser": "validform.min.js",
@@ -20,7 +20,7 @@
     "vanilla-js",
     "browser"
   ],
-  "author": "Ton Nom",
+  "author": "SebastienCozeDev",
   "license": "MIT",
   "devDependencies": {
     "terser": "^5.31.0"
