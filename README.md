@@ -1,8 +1,3 @@
----
-layout: default
-title: "@validform/validform"
----
-
 # @validform/validform
 
 A small vanilla JS form validation library for the browser.
