@@ -121,6 +121,6 @@ This package exposes:
 ## Package info
 
 - **Name:** `@validform/validform`
-- **Version:** `1.0.2`
+- **Version:** `1.0.3`
 - **Author:** `SebastienCozeDev`
 - **License:** MIT
