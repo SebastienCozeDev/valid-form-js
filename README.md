@@ -10,7 +10,7 @@ npm install @validform/validform
 
 ## CDN
 
-https://www.jsdelivr.com/package/npm/@validform/validform
+[https://www.jsdelivr.com/package/npm/@validform/validform](https://www.jsdelivr.com/package/npm/@validform/validform)
 
 ## Usage
 
@@ -89,7 +89,7 @@ Each validated input must:
 
 ## Example
 
-https://valid-form-js.cozedev.com/example.html
+[https://valid-form-js.cozedev.com/example.html](https://valid-form-js.cozedev.com/example.html)
 
 ## Validator classes
 
