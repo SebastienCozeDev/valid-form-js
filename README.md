@@ -8,6 +8,10 @@ A small vanilla JS form validation library for the browser.
 npm install @validform/validform
 ```
 
+## CDN
+
+https://www.jsdelivr.com/package/npm/@validform/validform
+
 ## Usage
 
 ### 1. Include the script
@@ -22,7 +26,16 @@ Or use it in your bundler:
 import '@validform/validform'
 ```
 
-### 2. Add validation rules to your form
+### 2. Structure your form
+
+Each validated input must:
+
+- have an `id`.
+- be inside the related `<label>`.
+- use validation classes on the `<label>`.
+- keep the error message element inside the same `<label>`.
+
+### 3. Add validation rules to your form
 
 ```html
 <form>
@@ -50,18 +63,18 @@ import '@validform/validform'
       The email address must be valid.
     </p>
     <p class="chars-255-max">
-      The username must contain a maximum of 255 characters.
+      The email must contain a maximum of 255 characters.
     </p>
   </label>
 
   <label class="required chars-255-max">
-    Email
+    Password
     <input type="password" id="password">
     <p class="required">
       The password is required.
     </p>
     <p class="chars-7-min">
-      The username must contain at least 7 characters.
+      The password must contain at least 7 characters.
     </p>
     <p class="chars-255-max">
       The password must contain a maximum of 255 characters.
@@ -73,6 +86,22 @@ import '@validform/validform'
   </button>
 </form>
 ```
+
+## Example
+
+https://valid-form-js.cozedev.com/example.html
+
+## Validator classes
+
+Validation classes must be placed on the `<label>` and on the error element inside the same `<label>`, not on the input itself.  
+The element that will be shown on error must also stay inside the same `<label>`.
+
+| Validation class | Meaning                                                                                       | Compatible input types |
+| ---------------- | --------------------------------------------------------------------------------------------- | ---------------------- |
+| required         | The input must not be empty.                                                                  | text, email, password  |
+| valid-email      | The input must contain a valid email address.                                                 | email                  |
+| chars-X-min      | The input must contain at least X characters. X can be 3, 5, or 7.                            | text, email, password  |
+| chars-X-max      | The input must contain at most X characters. X can be 3, 5, 7, 8, 10, 16, 20, 30, 36, or 255. | text, email, password  |
 
 ## Features
 
@@ -96,6 +125,6 @@ This package exposes:
 ## Package info
 
 - **Name:** `@validform/validform`
-- **Version:** `1.0.2`
+- **Version:** `1.0.3`
 - **Author:** `SebastienCozeDev`
 - **License:** MIT

@@ -5,7 +5,6 @@ const REQUIRED_SELECTOR = "input[type='text'], input[type='email'], input[type='
 const VALID_EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const fieldStates = new Map();
-const submitButton = document.querySelector("button[type='submit']");
 
 function toggleHTMLElement(element, state) {
   if (!element) return;
@@ -40,6 +39,7 @@ function getChilds(element, cssClass, selector) {
 }
 
 function updateSubmitButtonState() {
+  const submitButton = document.querySelector("button[type='submit']");
   const hasError = [...fieldStates.values()].some(isValid => !isValid);
   submitButton.disabled = hasError;
 }
@@ -105,6 +105,8 @@ class ValidForm {
   }
 }
 
-new ValidForm({
-  maxCharArray: [3, 5, 7, 8, 10, 16, 20, 30, 36, 255]
+document.addEventListener("DOMContentLoaded", () => {
+  new ValidForm({
+    maxCharArray: [3, 5, 7, 8, 10, 16, 20, 30, 36, 255]
+  });
 });
