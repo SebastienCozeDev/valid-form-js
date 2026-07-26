@@ -87,6 +87,10 @@ Each validated input must:
 </form>
 ```
 
+## Example
+
+https://valid-form-js.cozedev.com/example.html
+
 ## Validator classes
 
 Validation classes must be placed on the `<label>` and on the error element inside the same `<label>`, not on the input itself.  
